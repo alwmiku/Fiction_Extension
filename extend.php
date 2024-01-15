@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of clili/flarum-ficiton.
+ * This file is part of flarum/fictionextension.
  *
  * Copyright (c) 2024 clili.
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Clili\\Fiction;
+namespace Flarum\\FictionExtension;
 
 use Flarum\Extend;
 

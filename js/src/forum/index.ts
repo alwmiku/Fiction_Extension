@@ -1,5 +1,5 @@
 import app from 'flarum/forum/app';
 
-app.initializers.add('clili/flarum-ficiton', () => {
-  console.log('[clili/flarum-ficiton] Hello, forum!');
+app.initializers.add('flarum/fictionextension', () => {
+  console.log('[flarum/fictionextension] Hello, forum!');
 });

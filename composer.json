@@ -1,11 +1,11 @@
 {
-    "name": "clili/flarum-ficiton",
-    "description": "This is a novel plug-in, to provide users with novel book upload, release and other functions.",
+    "name": "flarum/fictionextension",
+    "description": "This is a fiction extesion for Flarum.",
     "keywords": [
         "flarum"
     ],
     "type": "flarum-extension",
-    "license": "MPL-1.0",
+    "license": "GPL-3.0",
     "require": {
         "flarum/core": "^1.2.0"
     },
@@ -18,12 +18,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Clili\\Fiction\\": "src/"
+            "Flarum\\FictionExtension\\": "src/"
         }
     },
     "extra": {
         "flarum-extension": {
-            "title": "Flarum-Fiction",
+            "title": "Fiction_Extension",
             "category": "",
             "icon": {
                 "name": "",
@@ -36,7 +36,7 @@
                 "admin": true,
                 "forum": true,
                 "js": true,
-                "jsCommon": true,
+                "jsCommon": false,
                 "css": true,
                 "locale": true,
                 "gitConf": false,
@@ -54,7 +54,7 @@
     "prefer-stable": true,
     "autoload-dev": {
         "psr-4": {
-            "Clili\\Fiction\\Tests\\": "tests/"
+            "Flarum\\FictionExtension\\Tests\\": "tests/"
         }
     },
     "scripts": {

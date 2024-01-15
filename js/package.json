@@ -1,5 +1,5 @@
 {
-    "name": "@clili/flarum-ficiton",
+    "name": "@flarum/fictionextension",
     "private": true,
     "version": "0.0.0",
     "devDependencies": {
