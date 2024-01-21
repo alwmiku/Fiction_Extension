@@ -1,8 +1,8 @@
-# Fiction_Extension
+# FictionExtension
 
 ![License](https://img.shields.io/badge/license-GPL-3.0-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/flarum/fictionextension.svg)](https://packagist.org/packages/flarum/fictionextension) [![Total Downloads](https://img.shields.io/packagist/dt/flarum/fictionextension.svg)](https://packagist.org/packages/flarum/fictionextension)
 
-A [Flarum](http://flarum.org) extension. This is a fiction extesion for Flarum.
+A [Flarum](http://flarum.org) extension. This is a fiction extension for Flarum.
 
 ## Installation
 

@@ -1,6 +1,6 @@
 {
     "name": "flarum/fictionextension",
-    "description": "This is a fiction extesion for Flarum.",
+    "description": "This is a fiction extension for Flarum.",
     "keywords": [
         "flarum"
     ],
@@ -12,7 +12,7 @@
     "authors": [
         {
             "name": "clili",
-            "email": "alwmiku@outlook.com",
+            "email": "almwiku@outlook.com",
             "role": "Developer"
         }
     ],
@@ -23,7 +23,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Fiction_Extension",
+            "title": "FictionExtension",
             "category": "",
             "icon": {
                 "name": "",
@@ -36,10 +36,10 @@
                 "admin": true,
                 "forum": true,
                 "js": true,
-                "jsCommon": false,
+                "jsCommon": true,
                 "css": true,
                 "locale": true,
-                "gitConf": false,
+                "gitConf": true,
                 "githubActions": false,
                 "prettier": true,
                 "typescript": true,
