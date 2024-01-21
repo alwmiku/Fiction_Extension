@@ -17,6 +17,7 @@ export default class BooksPage extends Component {
     return (
       <div className="BooksPage">
         BooksPage已经初始化。
+        测试ssh的功能是否正常。
       </div>
     );
   }
