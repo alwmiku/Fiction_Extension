@@ -2,10 +2,10 @@
 /******/ 	// runtime can't be in strict mode because a global variable is assign and maybe created.
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/admin/index.ts":
-/*!****************************!*\
-  !*** ./src/admin/index.ts ***!
-  \****************************/
+/***/ "./src/admin/index.tsx":
+/*!*****************************!*\
+  !*** ./src/admin/index.tsx ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19,10 +19,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+//import * from "./components/Link.js"
+
 flarum_admin_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('flarum/fictionextension', function () {
-  // console.log('[flarum/fictionextension] Hello, admin!');
+  console.log('[flarum/fictionextension] Hello, admin!');
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__.extend)((flarum_common_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_2___default().prototype), 'items', function (items) {
-    items.add('google', '<a href="https://google.com">Google</a>');
+    //TS 文件不支持在TS代码中嵌套html的写法，需要修改后缀才能和官方文档中的保持一致。
+    items.add('google', m("a", {
+      href: "https://google.com"
+    }, "Google"));
   });
 });
 
@@ -166,8 +171,7 @@ var __webpack_exports__ = {};
   \******************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/common */ "./src/common/index.ts");
-/* harmony import */ var _src_admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/admin */ "./src/admin/index.ts");
-
+/* harmony import */ var _src_admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/admin */ "./src/admin/index.tsx");
 
 
 })();
