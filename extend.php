@@ -12,6 +12,8 @@
 namespace Flarum\FictionExtension;
 
 use Flarum\Extend;
+use Ficiton\Extesion\Controller;
+use Ficiton\Extesion\Controller\BookHomePages;
 
 return [
     (new Extend\Frontend('forum'))
@@ -21,4 +23,7 @@ return [
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less'),
     new Extend\Locales(__DIR__.'/locale'),
+
+    (new Extend\Routes ('forum'))
+    ->get('/Fiction/homepage',"flarum.Fiction_Extension",BookHomePages::class),
 ];
