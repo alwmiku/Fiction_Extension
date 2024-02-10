@@ -19,20 +19,121 @@ flarum_common_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('flaru
 
 /***/ }),
 
-/***/ "./src/forum/index.ts":
+/***/ "./src/forum/BooksHome.js":
+/*!********************************!*\
+  !*** ./src/forum/BooksHome.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var flarum_common_extenders__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flarum/common/extenders */ "flarum/common/extenders");
+/* harmony import */ var flarum_common_extenders__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_common_extenders__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_BooksPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/BooksPage */ "./src/forum/components/BooksPage.js");
+/* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! flarum/forum/app */ "flarum/forum/app");
+/* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_app__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([new (flarum_common_extenders__WEBPACK_IMPORTED_MODULE_0___default().Routes)().add('flarum.Fiction_Extension.forntPages', '/Fiction/homepage', m(_components_BooksPage__WEBPACK_IMPORTED_MODULE_1__["default"], null)).helper('FictionHomePages', function () {
+  flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().route('flarum.Fiction_Extension.forntPages');
+})]);
+
+/***/ }),
+
+/***/ "./src/forum/components/BooksPage.js":
+/*!*******************************************!*\
+  !*** ./src/forum/components/BooksPage.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BooksPage)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
+/* harmony import */ var flarum_common_Component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/common/Component */ "flarum/common/Component");
+/* harmony import */ var flarum_common_Component__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_common_Component__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var BooksPage = /*#__PURE__*/function (_Component) {
+  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(BooksPage, _Component);
+  function BooksPage() {
+    return _Component.apply(this, arguments) || this;
+  }
+  var _proto = BooksPage.prototype;
+  _proto.oninit = function oninit(vnode) {
+    _Component.prototype.oninit.call(this, vnode);
+  };
+  _proto.oncreate = function oncreate(vnode) {
+    _Component.prototype.oncreate.call(this, vnode);
+  };
+  _proto.onupdate = function onupdate(vnode) {
+    _Component.prototype.onupdate.call(this, vnode);
+  };
+  _proto.view = function view() {
+    return m("div", {
+      className: "BooksPage"
+    }, "BooksPage\u5DF2\u7ECF\u521D\u59CB\u5316\u3002 \u6D4B\u8BD5ssh\u7684\u529F\u80FD\u662F\u5426\u6B63\u5E38\u3002");
+  };
+  return BooksPage;
+}((flarum_common_Component__WEBPACK_IMPORTED_MODULE_1___default()));
+
+
+/***/ }),
+
+/***/ "./src/forum/index.js":
 /*!****************************!*\
-  !*** ./src/forum/index.ts ***!
+  !*** ./src/forum/index.js ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   extend: () => (/* reexport safe */ _BooksHome__WEBPACK_IMPORTED_MODULE_1__["default"])
+/* harmony export */ });
 /* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flarum/forum/app */ "flarum/forum/app");
 /* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_app__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _BooksHome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BooksHome */ "./src/forum/BooksHome.js");
+/* harmony import */ var flarum_common_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! flarum/common/components/HeaderPrimary */ "flarum/common/components/HeaderPrimary");
+/* harmony import */ var flarum_common_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var flarum_common_components_Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! flarum/common/components/Link */ "flarum/common/components/Link");
+/* harmony import */ var flarum_common_components_Link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_Link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var flarum_common_extend__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! flarum/common/extend */ "flarum/common/extend");
+/* harmony import */ var flarum_common_extend__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(flarum_common_extend__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
 
 flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('flarum/fictionextension', function () {
-  console.log('[flarum/fictionextension] Hello, forum!');
+  // console.log('[flarum/fictionextension] Hello, forum!');
+  console.log((flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default()));
+  //const forumUrl = app.route('forum');
+
+  var bookUrl = flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().route('flarum.Fiction_Extension.forntPages');
+  (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_4__.extend)((flarum_common_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_2___default().prototype), 'items', function (items) {
+    items.add('fictionextension', m((flarum_common_components_Link__WEBPACK_IMPORTED_MODULE_3___default()), {
+      href: bookUrl
+    }, "\u4E66\u7AD9"));
+  });
 });
+
+/***/ }),
+
+/***/ "flarum/common/Component":
+/*!*********************************************************!*\
+  !*** external "flarum.core.compat['common/Component']" ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = flarum.core.compat['common/Component'];
 
 /***/ }),
 
@@ -47,6 +148,50 @@ module.exports = flarum.core.compat['common/app'];
 
 /***/ }),
 
+/***/ "flarum/common/components/HeaderPrimary":
+/*!************************************************************************!*\
+  !*** external "flarum.core.compat['common/components/HeaderPrimary']" ***!
+  \************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = flarum.core.compat['common/components/HeaderPrimary'];
+
+/***/ }),
+
+/***/ "flarum/common/components/Link":
+/*!***************************************************************!*\
+  !*** external "flarum.core.compat['common/components/Link']" ***!
+  \***************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = flarum.core.compat['common/components/Link'];
+
+/***/ }),
+
+/***/ "flarum/common/extend":
+/*!******************************************************!*\
+  !*** external "flarum.core.compat['common/extend']" ***!
+  \******************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = flarum.core.compat['common/extend'];
+
+/***/ }),
+
+/***/ "flarum/common/extenders":
+/*!*********************************************************!*\
+  !*** external "flarum.core.compat['common/extenders']" ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = flarum.core.compat['common/extenders'];
+
+/***/ }),
+
 /***/ "flarum/forum/app":
 /*!**************************************************!*\
   !*** external "flarum.core.compat['forum/app']" ***!
@@ -55,6 +200,48 @@ module.exports = flarum.core.compat['common/app'];
 
 "use strict";
 module.exports = flarum.core.compat['forum/app'];
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _inheritsLoose)
+/* harmony export */ });
+/* harmony import */ var _setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  (0,_setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _setPrototypeOf)
+/* harmony export */ });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+  return _setPrototypeOf(o, p);
+}
 
 /***/ })
 
@@ -134,8 +321,11 @@ var __webpack_exports__ = {};
   !*** ./forum.ts ***!
   \******************/
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   extend: () => (/* reexport safe */ _src_forum__WEBPACK_IMPORTED_MODULE_1__.extend)
+/* harmony export */ });
 /* harmony import */ var _src_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/common */ "./src/common/index.ts");
-/* harmony import */ var _src_forum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/forum */ "./src/forum/index.ts");
+/* harmony import */ var _src_forum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/forum */ "./src/forum/index.js");
 
 
 })();
