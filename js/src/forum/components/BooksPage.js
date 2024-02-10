@@ -1,6 +1,6 @@
-import Component from 'flarum/common/Component';
+import Page from 'flarum/common/components/Page';
 
-export default class BooksPage extends Component {
+export default class BooksPage extends Page {
   oninit(vnode) {
     super.oninit(vnode);
   }

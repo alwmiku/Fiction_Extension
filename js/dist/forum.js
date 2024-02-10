@@ -38,7 +38,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([new (flarum_common_extenders__WEBPACK_IMPORTED_MODULE_0___default().Routes)().add('flarum.Fiction_Extension.forntPages', '/Fiction/homepage', m(_components_BooksPage__WEBPACK_IMPORTED_MODULE_1__["default"], null)).helper('FictionHomePages', function () {
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([new (flarum_common_extenders__WEBPACK_IMPORTED_MODULE_0___default().Routes)().add('flarum.Fiction_Extension.forntPages', '/Fiction/homepage', _components_BooksPage__WEBPACK_IMPORTED_MODULE_1__["default"])
+//下面这句话用的是文档中的结构。根本不行，结果就是不可以。去掉反而好使了。
+// .add('flarum.Fiction_Extension.forntPages', '/Fiction/homepage', <BooksPage />)
+.helper('FictionHomePages', function () {
   flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().route('flarum.Fiction_Extension.forntPages');
 })]);
 
@@ -56,24 +59,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ BooksPage)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
-/* harmony import */ var flarum_common_Component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/common/Component */ "flarum/common/Component");
-/* harmony import */ var flarum_common_Component__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_common_Component__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/common/components/Page */ "flarum/common/components/Page");
+/* harmony import */ var flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_1__);
 
 
-var BooksPage = /*#__PURE__*/function (_Component) {
-  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(BooksPage, _Component);
+var BooksPage = /*#__PURE__*/function (_Page) {
+  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(BooksPage, _Page);
   function BooksPage() {
-    return _Component.apply(this, arguments) || this;
+    return _Page.apply(this, arguments) || this;
   }
   var _proto = BooksPage.prototype;
   _proto.oninit = function oninit(vnode) {
-    _Component.prototype.oninit.call(this, vnode);
+    _Page.prototype.oninit.call(this, vnode);
   };
   _proto.oncreate = function oncreate(vnode) {
-    _Component.prototype.oncreate.call(this, vnode);
+    _Page.prototype.oncreate.call(this, vnode);
   };
   _proto.onupdate = function onupdate(vnode) {
-    _Component.prototype.onupdate.call(this, vnode);
+    _Page.prototype.onupdate.call(this, vnode);
   };
   _proto.view = function view() {
     return m("div", {
@@ -81,7 +84,7 @@ var BooksPage = /*#__PURE__*/function (_Component) {
     }, "BooksPage\u5DF2\u7ECF\u521D\u59CB\u5316\u3002 \u6D4B\u8BD5ssh\u7684\u529F\u80FD\u662F\u5426\u6B63\u5E38\u3002");
   };
   return BooksPage;
-}((flarum_common_Component__WEBPACK_IMPORTED_MODULE_1___default()));
+}((flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_1___default()));
 
 
 /***/ }),
@@ -113,9 +116,6 @@ __webpack_require__.r(__webpack_exports__);
 
 flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('flarum/fictionextension', function () {
   // console.log('[flarum/fictionextension] Hello, forum!');
-  console.log((flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default()));
-  //const forumUrl = app.route('forum');
-
   var bookUrl = flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().route('flarum.Fiction_Extension.forntPages');
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_4__.extend)((flarum_common_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_2___default().prototype), 'items', function (items) {
     items.add('fictionextension', m((flarum_common_components_Link__WEBPACK_IMPORTED_MODULE_3___default()), {
@@ -123,17 +123,6 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('flarum
     }, "\u4E66\u7AD9"));
   });
 });
-
-/***/ }),
-
-/***/ "flarum/common/Component":
-/*!*********************************************************!*\
-  !*** external "flarum.core.compat['common/Component']" ***!
-  \*********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = flarum.core.compat['common/Component'];
 
 /***/ }),
 
@@ -167,6 +156,17 @@ module.exports = flarum.core.compat['common/components/HeaderPrimary'];
 
 "use strict";
 module.exports = flarum.core.compat['common/components/Link'];
+
+/***/ }),
+
+/***/ "flarum/common/components/Page":
+/*!***************************************************************!*\
+  !*** external "flarum.core.compat['common/components/Page']" ***!
+  \***************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = flarum.core.compat['common/components/Page'];
 
 /***/ }),
 
